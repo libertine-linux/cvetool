@@ -1,0 +1,28 @@
+[submodule "modules/halimede"]
+	path = modules/halimede
+	url = https://github.com/pallene/halimede.git
+	branch = master
+[submodule "modules/xmldom"]
+	path = modules/xmldom
+	url = https://github.com/pallene-modules/xmldom.git
+	branch = master
+[submodule "modules/libcurl"]
+	path = modules/libcurl
+	url = https://github.com/pallene-modules/libcurl.git
+	branch = master
+[submodule "modules/syscall"]
+	path = modules/syscall
+	url = https://github.com/pallene-modules/syscall.git
+	branch = master
+[submodule "modules/zlib"]
+	path = modules/zlib
+	url = https://github.com/pallene-modules/zlib.git
+	branch = master
+[submodule "modules/cliargs"]
+	path = modules/cliargs
+	url = https://github.com/pallene-modules/cliargs.git
+	branch = master
+[submodule "modules/toml"]
+	path = modules/toml
+	url = https://github.com/pallene-modules/toml.git
+	branch = master
