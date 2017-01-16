@@ -87,4 +87,5 @@ cvetool requires minimal dependencies. To work effectively, it needs installed:-
 † It should work on Windows but someone will need to code an equivalent of `wrapper` as a batch file, PowerShell script or the like and modify the code slightly in `halimede.io.FileStream:fileDescriptor()` to work on Windows.
 ‡ These are very common; zlib is almost certainly already on your system and libcurl is very likely to be (in the latter case, just install curl if it isn't). A precompiled version of zlib libraries can be found in `modules/zlib/bin/*` (the linux version only works with glibc). Likewise a precompiled version of libcurl can be found in `module/libcurl/bin/*`. You'll need to modify your `LD_LIBRARY_PATH` (`DYLD_FALLBACK_LIBRARY_PATH` if using Mac OS X) environment variable to use these. Using these precompiled libraries is not recomended as they are compiled by a third party outside of our control and are unlikely to be up-to-date or have appropriate security hardening for your platform.
 
-## cvetool
+### Compiling
+If you want a single executable, it's possible. For example `CROSS_COMPILE='x86_64-linux-musl-' modules/halimede/luajit-compile linux x86 cvetool` should work on Mac OS X once `brew install filosottile/musl-cross/musl-cross` has been done.
