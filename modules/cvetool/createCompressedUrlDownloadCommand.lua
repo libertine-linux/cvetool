@@ -5,8 +5,10 @@ Copyright © 2015 The developers of cvetool. See the COPYRIGHT file in the top-l
 
 
 local halimede = require('halimede')
+local cvetool = require('cvetool')
 local assert = halimede.assert
 local exception = halimede.exception
+local compressedUrlDownload = cvetool.compressedUrlDownload
 
 
 local shortOptionName = 'o'
